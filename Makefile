@@ -1,10 +1,10 @@
 CC=gcc
-CFLAGS=-I.
+CFLAGS=-I. -lstdc++
 DEPS=
 OBJ=server.o
-USERID=123456789
+USERID=005154394
 
-%.o: %.c $(DEPS)
+%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 all: server
